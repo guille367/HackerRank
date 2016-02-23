@@ -1,0 +1,35 @@
+<html ng-app="MyAPp">
+    <meta charset="utf-8">
+    <head>
+        <title>Pruebas HackerRank</title>
+        <script src="Scripts/jquery-1.12.0.js"></script>
+        <script src="Scripts/angular.js"></script>
+        <script src="Scripts/bootstrap.js"></script>
+        <link rel="stylesheet" href="Scripts/bootstrap.css">
+        <link rel="stylesheet" href="Scripts/bootstrap-theme.css">
+    </head>
+    <body ng-controller="ctrller">
+        
+        <select>
+            <option ng-repeat="alg in algoritmos.wampa">{{alg.data}}</option>
+        </select>
+        
+        <table class="table">
+            <thead>
+                <tr>
+                    <td><strong>Título</strong></td>
+                    <td><strong>Descripción</strong></td>
+                    <td><button class="btn-primary">Ejecutar!</button></td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+        
+        <script src="Scripts/Controller.js"></script>
+        <script src="Warmups/SimpleArraySum.js"></script>
+        <script src="Warmups/AVeryBigSum.js"></script>
+        <script src="Warmups/PlusMinus.js"></script>
+        <script src="Warmups/DiagDifference.js"></script>
+        <script src="Warmups/Staircase.js"></script>
+    </body>
+</html>
