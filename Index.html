@@ -10,10 +10,13 @@
     </head>
     <body ng-controller="ctrller">
         
-        <select>
-            <option ng-repeat="alg in algoritmos.wampa">{{alg.data}}</option>
+        <select ng-model="doms" ng-change="filtrarDominio(this)" >
+            <option ng-repeat="dom in dominios" >{{dom.nombre}}</option>
         </select>
         
+        <div ng-repeat="dom in dominiosFiltrados">{{dom}}</div>
+        
+        <input directiva-propia="true">
         <table class="table">
             <thead>
                 <tr>
