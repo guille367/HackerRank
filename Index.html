@@ -7,27 +7,52 @@
         <script src="Scripts/bootstrap.js"></script>
         <link rel="stylesheet" href="Scripts/bootstrap.css">
         <link rel="stylesheet" href="Scripts/bootstrap-theme.css">
+        <link rel="stylesheet" href="Scripts/ngDialog.css">
+        <link rel="stylesheet" href="Scripts/ngDialog-theme-plain.css">
     </head>
     <body ng-controller="ctrller">
         
-        <select ng-model="doms" ng-change="filtrarDominio(this)" >
+        <button ng-click="gettear()">doGet</button>
+        
+        <select ng-model="selectDominios" ng-change="filtrarDominio(this)" >
             <option ng-repeat="dom in dominios" >{{dom.nombre}}</option>
         </select>
         
         <div ng-repeat="dom in dominiosFiltrados">{{dom}}</div>
-        
-        <input directiva-propia="true">
-        <table class="table">
+
+        <table id="tabla" class="table">
             <thead>
                 <tr>
                     <td><strong>Título</strong></td>
                     <td><strong>Descripción</strong></td>
-                    <td><button class="btn-primary">Ejecutar!</button></td>
+                    
                 </tr>
             </thead>
-            <tbody></tbody>
+            <tbody>
+                <tr ng-repeat="dom in dominiosFiltrados">
+                    <td>{{dom.nombre}}</td>
+                    <td></td>
+                    <td><button ng-click="dom.verDescripcion()" class="btn-primary">Ejecutar!</button></td>
+                </tr>
+            </tbody>
         </table>
         
+        <script type="text/ng-template" id="dialogDesc">
+			<div class="ngdialog-message">
+				<h2>Native Angular.js solution</h2>
+				<div>With ngDialog you don't need jQuery or Bootstrap to create dialogs for <code>ng-app:</code></div>
+				<ul class="mt">
+					<li>Use it in controllers, factories or directives</li>
+					<li>Create your own directives</li>
+					<li>Style all UI and templates</li>
+					<li>Configure themes</li>
+					<li>Add animations and effects</li>
+				</ul>
+				<div class="mt">Module is shipped with both <code>ngDialog</code> service and default directive.</div>
+			</div>
+		</script>
+        
+        <script src="Scripts/ngDialog.js"></script>
         <script src="Scripts/Controller.js"></script>
         <script src="Warmups/SimpleArraySum.js"></script>
         <script src="Warmups/AVeryBigSum.js"></script>

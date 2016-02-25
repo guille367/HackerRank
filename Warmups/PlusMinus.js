@@ -51,3 +51,7 @@ function plusMinusZero(arr){
     console.log(negs/arr.length);
     console.log(zeros/arr.length);
 }
+
+function callAlert(msj){
+    alert(msj);
+}

@@ -1,0 +1,8 @@
+{
+"data":{
+		"nombre":"Algorithms","subdominios":
+			{"nombre":"Warmup","nombre":"Implementation","nombre":"Strings"},
+		"nombre":"Data Structures"
+		}
+}
+		
