@@ -9,7 +9,7 @@ app.get('/index.html',function(req,res){
 });
 
 app.get('/serviuCall',function(req,res){
-    fs.readFile('pruebaalgoritmos.txt',function(err,data){
+    fs.readFile('algoritmos.txt',function(err,data){
         //res.setHeader('Content-Type', 'application/json');
         res.send(data);
     });

@@ -12,13 +12,15 @@
     </head>
     <body ng-controller="ctrller">
         
-        <button ng-click="gettear()">doGet</button>
-        
-        <select ng-model="selectDominios" ng-change="filtrarDominio(this)" >
-            <option ng-repeat="dom in dominios" >{{dom.nombre}}</option>
+        <select ng-model="selectDominios" ng-change="filtrarDominio()" ng-init="" >
+            <option ng-value="nada"></option>
+            <option ng-repeat="dom in dominios">{{dom.Nombre}}</option>
         </select>
         
-        <div ng-repeat="dom in dominiosFiltrados">{{dom}}</div>
+        <select ng-model="selectSubDominios" ng-show="selectDominios.value != ''" ng-change="filtrarSubDominios()">
+            <option ng-repeat="dom in subDominiosFiltrados">{{dom.Nombre}}</option>
+            <!--<option ng-repeat="dom in dominios" >{{dom.Nombre}}</option> -->
+        </select>
 
         <table id="tabla" class="table">
             <thead>
@@ -29,13 +31,14 @@
                 </tr>
             </thead>
             <tbody>
-                <tr ng-repeat="dom in dominiosFiltrados">
-                    <td>{{dom.nombre}}</td>
+                <tr ng-repeat="ej in Ejercicios">
+                    <td>{{ej.Nombre}}</td>
                     <td></td>
-                    <td><button ng-click="dom.verDescripcion()" class="btn-primary">Ejecutar!</button></td>
+                    <td><button ng-click="ej.Funcion()" class="btn-primary">Ejecutar!</button></td>
                 </tr>
             </tbody>
         </table>
+        
         
         <script type="text/ng-template" id="dialogDesc">
 			<div class="ngdialog-message">
@@ -59,5 +62,6 @@
         <script src="Warmups/PlusMinus.js"></script>
         <script src="Warmups/DiagDifference.js"></script>
         <script src="Warmups/Staircase.js"></script>
+       
     </body>
 </html>

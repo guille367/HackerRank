@@ -1,6 +1,8 @@
-function main() {
-    var n = parseInt(readLine());
-    arr = readLine().split(' ');
+function mainArrSum() {
+    //var n = parseInt(readLine());
+    var n = prompt('Ingrese el array de numeros: ');
+    //arr = readLine().split(' ');
+    var arr = n.split(' ');
     arr = arr.map(Number);
     console.log(arrSum(arr));
 }

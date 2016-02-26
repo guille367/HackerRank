@@ -1,0 +1,116 @@
+{
+	"Dominios":{
+		"Algorythms":{
+                "Nombre" : "Algoritmos",
+				"Subdominios":{ 
+                        "Warmup":{
+                                    "Nombre" : "Warmup",
+                                            "Ejercicios":{
+                                                "Solve me first":{
+                                                    "Nombre":"Solve me first",
+                                                    "Funcion":"alert('resolveme primero');"
+                                                },
+                                                "Simple array sum":{
+                                                    "Nombre":"Simple array sum",
+                                                    "Funcion":"mainArrSum();"
+                                                },
+                                                "A very big sum":{
+                                                    "Nombre":"A very big sum",
+                                                    "Funcion":""
+                                                },
+                                                "Diagonal difference":{
+                                                    "Nombre":"",
+                                                    "Funcion":""
+                                                },
+                                                "Plus minus":{
+                                                    "Nombre":"",
+                                                    "Funcion":""
+                                                },
+                                                "Staircase":{
+                                                    "Nombre":"",
+                                                    "Funcion":""
+                                                },
+                                                "Time conversion":{
+                                                    "Nombre":"",
+                                                    "Funcion":""
+                                                }
+                                            }
+                                        },
+						"Implementation":{
+                                        "Nombre" : "Implementation",
+                                            "Ejercicios":{}
+                                        },
+						"Strings":{
+                                        "Nombre" : "Strings",
+                                            "Ejercicios":{}
+                                        },
+						"Sorting":{
+                                        "Nombre" : "Sorting",
+                                            "Ejercicios":{}
+                                        },
+						"Search":{
+                                        "Nombre" : "Search",
+                                            "Ejercicios":{}
+                                        },
+						"Graph Theory":{
+                                        "Nombre" : "Graph Theory",
+                                            "Ejercicios":{}
+                                        },
+						"Greedy":{
+                                        "Nombre" : "Greedy",
+                                            "Ejercicios":{}
+                                        },
+						"Dynamic Programming":{
+                                        "Nombre" : "Dynamic Programming",
+                                            "Ejercicios":{}
+                                        },
+						"Bit Manipulating":{
+                                        "Nombre" : "Bit Manipulating",
+                                            "Ejercicios":{}
+                                        },
+						"Game Theory":{
+                                        "Nombre" : "Game Theory",
+                                            "Ejercicios":{}
+                                        },
+						"NP Complete":{
+                                        "Nombre" : "NP Complete",
+                                            "Ejercicios":{}
+                                        }
+						}
+                },
+		"Data Structures":{
+                "Nombre" : "Data Structures",
+				"Subdominios":""
+				},
+		"Mathematics":{
+                "Nombre" : "Mathematics",
+				"Subdominios":""
+				},
+		"Java":{
+                "Nombre" : "Java",
+				"Subdominios":""
+				}
+		}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
